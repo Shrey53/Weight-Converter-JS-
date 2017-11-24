@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weight Converter</title>
+
+    <!-- bootstrap 4 CDN(CSS) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- custom CSS -->
+    <style>
+        body{
+            background-color: #333;
+            color: #fff;
+        }
+        #title{
+            margin-top:5%;
+        }
+        #myForm{
+            margin-bottom: 4%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3 id="title" class="display-4 text-center mb-2">
+                    Weight Converter
+                </h3>
+
+                <form id="myForm">
+                    <div class="form-group">
+                        <select id="weightParameter" class="form-control form-control-md">
+                            <option value="kilogram">kilogram</option>
+                            <option value="gram">gram</option>
+                            <option value="pounds">pounds</option>
+                            <option value="ounce">ounce</option>
+                        </select>
+                    </div>
+
+                
+                    <div class="form-group">
+                        <input id="weight" type="number" min=0 class="form-control form-control-md" placeholder="Enter the weight...">
+                    </div>
+                </form>
+
+
+                <div class="output">
+
+                    <div class="card card-primary mb-3">
+                            <div class="card-block">
+                                <h3>Kilogram:</h3>
+                                <div id="kilogrmValue"></div>
+                            </div>
+                    </div>
+
+                    <div class="card card-success mb-3">
+                        <div class="card-block">
+                            <h3>Gram:</h3>
+                            <div id="grmValue"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-danger mb-3">
+                            <div class="card-block">
+                                <h3>Pound:</h3>
+                                <div id="lbsValue"></div>
+                            </div>
+                        </div>
+
+                    <div class="card card-info mb-3">
+                            <div class="card-block">
+                                <h3>Ounce:</h3>
+                                <div id="ozValue"></div>
+                            </div>
+                    </div>
+
+                    
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Codes -->
+    <script type="text/javascript" src="index.js"></script>
+    
+</body>
+</html>
+    
+
+
